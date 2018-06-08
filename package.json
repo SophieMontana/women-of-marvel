@@ -1,0 +1,26 @@
+{
+  "name": "women-of-marvel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "start": "nodemon jarvis-api.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SophieMontana/women-of-marvel.git"
+  },
+  "author": "SophieMontana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SophieMontana/women-of-marvel/issues"
+  },
+  "homepage": "https://github.com/SophieMontana/women-of-marvel#readme",
+  "dependencies": {
+    "colors": "^1.3.0",
+    "commander": "^2.15.1",
+    "express": "^4.16.3",
+    "marvel-api": "^1.1.0"
+  }
+}

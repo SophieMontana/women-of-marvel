@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+var Avengers = require('./avengers')
+
+program
+  .version('0.1.0')
+  .option('-ga, --getAvengers', 'Get Avengers')
+   .parse(process.argv);
+
+if (program.getAvengers) {
+  var avengers = new Avengers ({
+    publicKey :'3d82e91fbd3d89a2a32319235b3aa3b2',
+    privateKey : 'aa9171353466ac3df782c0cfd95e2a9454517ce1'
+  })
+
+  avengers.assemble(function(avengers) {
+    console.log(avengers)
+  })
+}
+
+
+
